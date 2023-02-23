@@ -4,6 +4,7 @@
         <title>Epsilon</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/style.css">
     </head>
     <body>
         <div class="MainDiv">
@@ -18,64 +19,8 @@
         </div>
 
         <div class="SideDiv">
-            <div class="Mascot"></div>
+            <div class="Mascot" id="MascotID"></div>
         </div>
     </body>
-    <style>
-        body{
-            background-image: url(img/BG3.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        h1{
-            position: absolute;
-            top: 1%;
-            left: 1%;
-        }
-
-        .list{
-            position: absolute;
-            left: 1%;
-        }
-
-        .MainDiv{
-            position: absolute;
-            background-color: aliceblue;
-            box-shadow: 5px 10px;
-            padding: 80px 150px;
-            height: 1000px;
-            width: 400px;
-            top: 0%;
-            left: 0%;
-        }
-
-        .inputCon{
-            position: absolute;
-            top: 63%;
-            left: 1%;
-        }
-
-        input{
-            width: 690px;
-            padding: 20px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-        }
-
-        .SideDiv{
-            position: absolute;
-            background-color: transparent;
-            box-shadow: 5px 10px;
-            padding: 80px 150px;
-            height: 1000px;
-            width: 240px;
-            top: 0%;
-            right: 0%;
-        }
-    </style>
     <script src="bot.js"></script>
 </html>

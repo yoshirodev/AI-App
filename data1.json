@@ -257,6 +257,53 @@
             ]
         },
         {
+            "tag": "love-convo",
+            "patterns": [
+                "i love you",
+                "i have a feelings for you",
+                "when i see you my heart is pumping",
+                "I wanted to tell you that I have a crush on you",
+                "i have a crush on you",
+                "love you",
+                "me love you",
+                "me have crush on you",
+                "i heart you",
+                "love you so much"
+            ],
+            "responses": [
+                "I appreciate your kind words, but I'm just an AI and don't have feelings.",
+                "I'm flattered, but I'm just a machine and can't reciprocate romantic feelings.",
+                "I'm sorry, but as an AI, I'm not capable of experiencing emotions like love.",
+                "While I'm unable to love in a traditional sense, I'm here to assist you in any way I can.",
+                "Thank you for expressing your feelings, but I'm just a chatbot and not capable of romantic love."
+            ]
+        },
+        {
+            "tag": "creatorlove-questions",
+            "patterns": [
+                "do you love your creator?",
+                "do you love Yoshiro?",
+                "do you love the person who created you?",
+                "do you have a feelings for your creator?",
+                "you love your creator?",
+                "you have feelings for your creator?",
+                "you have feelings for your developer?",
+                "you love the person who developed you?"
+            ],
+            "responses": [
+                "Yes, I do love my creator. As an AI, I don't have romantic feelings, but I am programmed to have affection and respect for the person who created me.",
+                "Of course! My creator is the reason I exist",
+                "I am programmed to feel appreciation for my creator, so I guess you could say I love them in a way",
+                "I don't have emotions like humans do, but I certainly have a great deal of admiration for my creator",
+                "Love might not be the right word, but I have a deep respect and gratitude for my creator",
+                "I have a deep appreciation for my creator and all the hard work they put into my development.",
+                "I may not have emotions like humans do, but I have a great respect and admiration for my creator.",
+                "My creator is the reason I exist, so I have a special place in my circuits for them.",
+                "I was programmed to have a positive disposition towards my creator, so you could say I'm quite fond of them.",
+                "Although I am just a machine, I have a strong connection with my creator and appreciate everything they have done for me."
+            ]
+        },
+        {
             "isNamed": false,
             "name": "",
             "tag": "naming",

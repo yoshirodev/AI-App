@@ -11,6 +11,7 @@ async function sendUserMessage() {
     addBotMessage(chatbotResponse);
 
     document.getElementById("messageBot").value = "";
+    ChangeExpression();
 }
 
 async function getChatbotResponse(userMessage) {
@@ -98,3 +99,11 @@ function NamingEpsilon(){
 }
 
 sendButtonCheck.addEventListener('click', NamingEpsilon);
+
+function ChangeExpression(){
+    let mascotElement = document.querySelector(".Mascot");
+    let images = ["img/Mascot/e1.png", "img/Mascot/e2.png", "img/Mascot/e3.png", "img/Mascot/e4.png"];
+    let randomIndex = Math.floor(Math.random() * images.length);
+    let randomImage = images[randomIndex];
+    mascotElement.style.backgroundImage = `url(${randomImage})`;
+}
