@@ -84,8 +84,8 @@ function NamingEpsilon(){
     fetch('data1.json')
     .then(response => response.json())
     .then(data => {
-        const isNamed = data.intents[19].isNamed;
-        let objectName = data.intents[19].patterns;
+        const isNamed = data.intents[22].isNamed;
+        let objectName = data.intents[22].patterns;
 
         if(objectName.includes(inputMBot)){    
             if (isNamed) {

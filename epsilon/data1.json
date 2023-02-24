@@ -252,10 +252,19 @@
             "tag": "favorite_waifu",
             "patterns": [
                 "Who is Yoshiro's favorite waifu?",
-                "What is Yoshiro's favorite anime girl?"
+                "What is Yoshiro's favorite anime girl?",
+                "who is Yoshiro's waifu?",
+                "who is Yoshiro's favorite girl?",
+                "Yoshiro's favorite girl?",
+                "Yoshiro's favorite waifu?",
+                "Favorite waifu of Yoshiro?"
             ],
             "responses": [
-                "Yoshiro's favorite waifus are Ayaka from Genshin Impact and Megumi Kato from Saekano anime."
+                "Base on My Creator: Yoshiro's favorite waifus are Ayaka from Genshin Impact and Megumi Kato from Saekano anime. But of course im his TOP favorite",
+                "hehe of course ME!!",
+                "ME!!",
+                "im her favorite!! hehe",
+                "of course ME!!!"
             ]
         },
         {
@@ -290,7 +299,9 @@
                 "you love your creator?",
                 "you have feelings for your creator?",
                 "you have feelings for your developer?",
-                "you love the person who developed you?"
+                "you love the person who developed you?",
+                "do you love your developer?",
+                "you love yoshiro?"
             ],
             "responses": [
                 "Yes, I do love my creator. As an AI, I don't have romantic feelings, but I am programmed to have affection and respect for the person who created me.",
