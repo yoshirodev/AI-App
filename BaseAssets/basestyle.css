@@ -1,0 +1,167 @@
+body{
+    background-color: rgb(0, 153, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url(../HomeImg/Home5.png);
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    width: 96%;
+    overflow: hidden;
+    background-color:  rgb(0, 110, 201);
+    padding: 5px 16px;
+    z-index: 9999;
+    background-image: linear-gradient(to top, rgba(70, 134, 255, 0.5), rgba(0, 0, 0, 0));
+}
+
+.leftDiv{
+    top: 5%;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 9999;
+}
+
+.rightNav{
+    top: 5%;
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 9999;
+}
+
+.MainBody{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 100px 110px;
+    background-color: transparent;
+    background-size: 1720px 1080px;
+}
+
+.moon{
+    position: absolute;
+    background-image: url(../HomeImg/Moon.png);
+    background-size: 200px 200px;
+    width: 40px;
+    height: 40px;
+    padding: 80px 80px;
+    top: 20%;
+    left: 3%;
+    transition: 2s;
+    opacity: 0;
+}
+
+.header1{
+    position: absolute;
+    background-image: url(../HomeImg/Header2.png);
+    background-size: 300px 230px;
+    width: 70px;
+    height: 70px;
+    padding: 70px 100px;
+    top: 15%;
+    left: 7%;
+    transition: 2s;
+    opacity: 0;
+}
+
+.SecondBody{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    padding: 100px 115px;
+    background-color: #add8e6;
+    left: 0%;
+    right: 100%;
+    top: 0%;
+    background-image: linear-gradient(to bottom, #4686ff80, rgba(0, 0, 0, 0));
+}
+
+.HomeMascot{
+    position: absolute;
+    background-color: transparent;
+    background-image: url(../HomeImg/MascotHPTR.png);
+    padding: 10px 120px;
+    height: 600px;
+    width: 80px;
+    background-size: 310px 610px;
+    right: -25%;
+    top: 15%;
+    transition: 1s;
+}
+
+.show1 {
+    right: 25%;
+    transform: translateY(0);
+}
+
+.aboutCon{
+    position: absolute;
+    background-color: #91caff;
+    background-image: linear-gradient(to bottom, rgba(0, 89, 255, 0.5), rgba(0, 0, 0, 0));
+    height: 350px;
+    width: 650px;
+    left: -50%;
+    top: 10%;
+    border-radius: 25px;
+    box-shadow: 10px;
+    transition: 1s;
+}
+
+.show2 {
+    left: 5%;
+    transform: translateY(0);
+}
+
+.Box1{
+    position: absolute;
+    border-radius: 25px 25px 25px 25px;
+    background: #add8e6;
+    padding: 20px;
+    width: 600px;
+    height: 350px;
+    top: 15%;
+    left: -50%;
+    transition: 1s;
+}
+
+.subShow3{
+    left: 10%;
+    transform: translateY(0);
+}
+
+.aboutCon h2{
+    text-align: center;
+    font-style: initial;
+}
+
+.ButDiv{
+    position: absolute;
+    bottom: 25%;
+    left: 20%;
+    transition: 1s;
+}
+
+.up1{
+    bottom: 36%;
+    transform: translateY(0);
+}
+
+.GoToEps{
+    border-radius: 25px;
+    background: #569fff;
+    padding: 20px;
+    width: 150px;
+    height: 80px;
+}

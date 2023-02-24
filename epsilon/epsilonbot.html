@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Epsilon</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel = "icon" href ="img/Mascot/icon.png" type = "image/x-icon">
+    </head>
+    <body>
+        <div class="MainDiv">
+            <h1>Epsilon Software</h1>
+            <ul class="list" id="chatList">
+                <li class="bot-message">Hello</li>
+            </ul>
+            <div class="inputCon">
+                <input type="text" id="messageBot" placeholder="Type your message here">
+                <button id="sendButtonCLC" type="button" onclick="sendUserMessage()">SendRequest</button>
+            </div>
+        </div>
+
+        <div class="SideDiv">
+            <div class="Mascot" id="MascotID"></div>
+        </div>
+    </body>
+    <script src="bot.js"></script>
+</html>

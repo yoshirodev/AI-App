@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Epsilon</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/style.css">
-        <link rel = "icon" href ="img/Mascot/icon.png" type = "image/x-icon">
-    </head>
+    <title>The Secret Dev Team</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BaseAssets/basestyle.css">
+
     <body>
-        <div class="MainDiv">
-            <h1>Epsilon Software</h1>
-            <ul class="list" id="chatList">
-                <li class="bot-message">Hello</li>
-            </ul>
-            <div class="inputCon">
-                <input type="text" id="messageBot" placeholder="Type your message here">
-                <button id="sendButtonCLC" type="button" onclick="sendUserMessage()">SendRequest</button>
-            </div>
+        <div class="nav" id="navid"> 
+            <a href="epsilon/epsilonbot.html" class="leftDiv">Epsilon Software</a>
+            <a href="#Alpha" class="leftDiv">About Us</a>
+            <a href="#MainBId" class="leftDiv">Home</a>
+
+            <a class="rightNav" href="https://twitter.com/Yoshiroooo0">Twitter</a>
         </div>
 
-        <div class="SideDiv">
-            <div class="Mascot" id="MascotID"></div>
+        <div class="MainBody" id="MainBId">
+            <div class="header1"></div>
+            <div class="moon"></div>
+        </div>
+
+        <div class="SecondBody" id="Alpha">
+            <div class="Box1"></div>
+            <div class="HomeMascot"></div>
+            <div class="Box2"></div>
+            <div class="aboutCon">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+            </div>
+
+            <div class="ButDiv">
+                <a href="epsilon/epsilonbot.html">
+                    <button class="GoToEps">Go to Epsilon Bot</button>
+                </a>
+            </div>
         </div>
     </body>
-    <script src="bot.js"></script>
+    <script src="BaseAssets/mainapp.js"></script>
 </html>
