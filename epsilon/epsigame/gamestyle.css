@@ -19,6 +19,13 @@ body{
     top: 12%;
 }
 
+.MainEpsilon h2{
+    position: absolute;
+    top: -10%;
+    left: -20%;
+    font-style: normal;
+}
+
 .MainDiv{
     background-color: #96d6eb;
     position: relative;
@@ -98,8 +105,8 @@ body{
     padding: 50px 90px;
     border-radius: 50px;
     border-style: solid;
-    background-image: url(gameimg/PlayerStarting.png);
-    background-size: 200px 200px;
+    background-image: url(gameimg/EpsiStarting.png);
+    background-size: 200px 180px;
     top: 10%;
     right: 35%;
 }

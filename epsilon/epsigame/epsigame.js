@@ -13,6 +13,8 @@ let winOrLoose = ["gameimg/Win-p", "gameimg/Loose-p"];
 
 let userImage = ["gameimg/PlayerPaper.png", "gameimg/PlayerRock.png", "gameimg/PlayerScissor.png"];
 
+let epsiImage = ["gameimg/EpsiPaper.png", "gameimg/EpsiRock.png", "gameimg/EpsiScissor.png"];
+
 let answer = 0;
 
 let userInputImage = document.querySelector(".UserInputImage");
@@ -43,13 +45,13 @@ function MainGameEvent(){
     switch (randomIndex){
         default:
         case randomIndex = 0:
-            epsilonOutputImage.style.backgroundImage = `url(${userImage[0]})`;
+            epsilonOutputImage.style.backgroundImage = `url(${epsiImage[0]})`;
             break;
         case randomIndex = 1:
-            epsilonOutputImage.style.backgroundImage = `url(${userImage[1]})`;
+            epsilonOutputImage.style.backgroundImage = `url(${epsiImage[1]})`;
             break;
         case randomIndex = 2:
-            epsilonOutputImage.style.backgroundImage = `url(${userImage[2]})`;
+            epsilonOutputImage.style.backgroundImage = `url(${epsiImage[2]})`;
             break;
     }
 
@@ -108,7 +110,7 @@ function MainGameEvent(){
 function Confirm(){
     
     if(pickedAns == false){
-        statusHeader.innerHTML = "Pick something first";
+        statusHeader.innerHTML = "Pick something first.";
     }else{
         MainGameEvent();
     }
