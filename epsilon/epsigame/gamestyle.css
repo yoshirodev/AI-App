@@ -77,3 +77,35 @@ body{
     top: 60%;
     right: 35%;
 }
+
+.UserInputImage h2{
+    position: absolute;
+    right: -40%;
+    text-align: center;
+}
+
+.VSHeader{
+    position: absolute;
+    top: 40%;
+    right: 45%;
+    text-align: center;
+}
+
+.EpsilonOutputImage{
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    padding: 50px 90px;
+    border-radius: 50px;
+    border-style: solid;
+    background-image: url(gameimg/PlayerStarting.png);
+    background-size: 200px 200px;
+    top: 10%;
+    right: 35%;
+}
+
+.EpsilonOutputImage h2{
+    position: absolute;
+    right: -50%;
+    text-align: center;
+}

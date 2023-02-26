@@ -1,7 +1,5 @@
 // REMINDER::: IF IT WORKS DONT TOUCH IT BRUH JS IS FREAKIN HARD
 
-// LEFT THE SETTING PLAYER ANSWER INPUT EX: ROCK
-
 window.onload = function(){
     let mainDivider = document.querySelector('.MainDiv');
 
@@ -10,17 +8,16 @@ window.onload = function(){
 
 let winOrLoose = ["gameimg/Win-p", "gameimg/Loose-p"];
 
-let userImage = ["gameimg/PlayerStarting.png", "gameimg/PlayerRock.png", "gameimg/PlayerPaper.png", "gameimg/PlayerScissor.png"];
+let userImage = ["gameimg/PlayerPaper.png", "gameimg/PlayerRock.png", "gameimg/PlayerScissor.png"];
 
 let answer = 0;
-
-let winAns = false;
-let looseAns = false;
 
 let userInputImage = document.querySelector(".UserInputImage");
 
 function MainGameEvent(){
     let mascotElement = document.querySelector(".MainEpsilon");
+    let epsilonOutputImage = document.querySelector(".EpsilonOutputImage");
+
     let images = ["gameimg/Paper-p.png", "gameimg/Rock-p.png", "gameimg/Scissors-p.png"];
     let randomIndex = Math.floor(Math.random() * images.length);
     let randomImage = images[randomIndex];
@@ -32,13 +29,26 @@ function MainGameEvent(){
     switch(answer){
         default:
         case answer = 1:
-            const myTimeout1 = setTimeout(RockDef, 1000);
+            PaperDef();
             break;   
         case answer = 2:
-            const myTimeout2 = setTimeout(PaperDef, 1000);
+            RockDef();
             break;
         case answer = 3:
-            const myTimeout3 = setTimeout(ScissorsDef, 1000);
+            ScissorsDef();
+            break;
+    }
+
+    switch (randomIndex){
+        default:
+        case randomIndex = 0:
+            epsilonOutputImage.style.backgroundImage = `url(${userImage[0]})`;
+            break;
+        case randomIndex = 1:
+            epsilonOutputImage.style.backgroundImage = `url(${userImage[1]})`;
+            break;
+        case randomIndex = 2:
+            epsilonOutputImage.style.backgroundImage = `url(${userImage[2]})`;
             break;
     }
 
@@ -59,16 +69,6 @@ function MainGameEvent(){
                 statusHeader.innerHTML = "You Loose";
                 break;
         }
-
-        /*
-        if(randomIndex == 2){
-            statusHeader.innerHTML = "You Win";
-        }else if(randomIndex == 1 ){
-            statusHeader.innerHTML = "Tie";
-        }else{
-            statusHeader.innerHTML = "You Loose";
-        }
-        */
     }
 
     function PaperDef(){
@@ -84,16 +84,6 @@ function MainGameEvent(){
                 statusHeader.innerHTML = "You Loose";
                 break;
         }
-
-        /*
-        if(randomIndex == 1){
-            statusHeader.innerHTML = "You Win";
-        }else if(randomIndex == 0 ){
-            statusHeader.innerHTML = "Tie";
-        }else{
-            statusHeader.innerHTML = "You Loose";
-        }
-        */
     }
 
     function ScissorsDef(){
@@ -109,42 +99,26 @@ function MainGameEvent(){
                 statusHeader.innerHTML = "You Loose";
                 break;
         }
-
-        /*
-        if(randomIndex == 0){
-            statusHeader.innerHTML = "You Win";
-        }else if(randomIndex == 2){
-            statusHeader.innerHTML = "Tie";
-        }else{
-            statusHeader.innerHTML = "You Loose";
-        }
-        */
     }
+
+
 }
 
 function Confirm(){
     MainGameEvent();
 }
 
-function Rock(){
+function Paper(){
     answer = 1;
-    userInputImage.style.backgroundImage = `url(${userImage[1]})`;
+    userInputImage.style.backgroundImage = `url(${userImage[0]})`;
 }
 
-function Paper(){
+function Rock(){
     answer = 2;
-    userInputImage.style.backgroundImage = `url(${userImage[2]})`;
+    userInputImage.style.backgroundImage = `url(${userImage[1]})`;
 }
 
 function Scissors(){
     answer = 3;
-    userInputImage.style.backgroundImage = `url(${userImage[3]})`;
-}
-
-function WinPlayer(){
-
-}
-
-function LoosePlayer(){
-
+    userInputImage.style.backgroundImage = `url(${userImage[2]})`;
 }
