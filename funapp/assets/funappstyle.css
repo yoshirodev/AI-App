@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(0, 153, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url(../../HomeImg/Home5.png);
+}
+
+.MainDiv{
+    background-color: #96d6eb;
+    position: relative;
+    background-attachment: fixed;
+    width: 500px;
+    height: 500px;
+    padding: 100px 110px;
+    background-image: linear-gradient(to bottom, #4686ff80, rgba(0, 0, 0, 0));
+    top: 10%;
+    right: 80%;
+    left: 20%;
+}
+
+.sendButton{
+    width: 50px;
+    height: 20px;
+}
+
+.outputDiv{
+    position: absolute;
+    width: 94%;
+    height: 450px;
+    bottom: 0%;
+    left: 3%;
+    background-color: transparent;
+}

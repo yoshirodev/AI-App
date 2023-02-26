@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GameApp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=0">
+        <link rel="stylesheet" href="assets/funappstyle.css">
+    </head>
+
+    <body>
+
+
+
+        <div class="MainDiv" ng-app="">
+            <p>Name: <input id="nameInput" type="text" ng-model="name"></p>
+            <button onclick="SubmitName()" class="sendButton">Send</button>
+            <p>The Name is <span ng-bind="name"></span></p>
+            <div class="outputDiv" id="outputs">
+                <li class="name-output">Name Here</li>
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="assets/sideapp.js"></script>
+</html>
