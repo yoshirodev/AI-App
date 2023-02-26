@@ -5,6 +5,9 @@ window.onload = function(){
 
     mainDivider.classList.add('showDiv');
 }
+let statusHeader = document.getElementById("StatusID");
+
+let pickedAns = false;
 
 let winOrLoose = ["gameimg/Win-p", "gameimg/Loose-p"];
 
@@ -21,8 +24,6 @@ function MainGameEvent(){
     let images = ["gameimg/Paper-p.png", "gameimg/Rock-p.png", "gameimg/Scissors-p.png"];
     let randomIndex = Math.floor(Math.random() * images.length);
     let randomImage = images[randomIndex];
-
-    let statusHeader = document.getElementById("StatusID");
 
     const myTimeOutEpsi = setTimeout(SetEpsiAnswer, 2000);
 
@@ -105,20 +106,29 @@ function MainGameEvent(){
 }
 
 function Confirm(){
-    MainGameEvent();
+    
+    if(pickedAns == false){
+        statusHeader.innerHTML = "Pick something first";
+    }else{
+        MainGameEvent();
+    }
+    pickedAns = false;
 }
 
 function Paper(){
     answer = 1;
     userInputImage.style.backgroundImage = `url(${userImage[0]})`;
+    pickedAns = true;
 }
 
 function Rock(){
     answer = 2;
     userInputImage.style.backgroundImage = `url(${userImage[1]})`;
+    pickedAns = true;
 }
 
 function Scissors(){
     answer = 3;
     userInputImage.style.backgroundImage = `url(${userImage[2]})`;
+    pickedAns = true;
 }
