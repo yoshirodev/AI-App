@@ -1,7 +1,5 @@
 // Fun App Software
 
-const nameData = JSON.parse('{"name":"", "age":, "address":""}');
-
 function SubmitName(){
     let nameInput = document.getElementById("nameInput").value;
     const chatList = document.getElementById("outputs");
@@ -31,10 +29,6 @@ function MainEvents(){
             return datasets[0];
         })
 }
-
-
-let age1 = document.getElementById('age1').innerHTML;
-let address1 = document.getElementById('address1').innerHTML;
 
 function ButtonTap(){
     MainEvents().then(() => {
