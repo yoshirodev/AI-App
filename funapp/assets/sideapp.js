@@ -30,7 +30,7 @@ function MainEvents(){
         })
 }
 
-function ButtonTap(){
+async function ButtonTap(){
     MainEvents().then(() => {
         const nameData = data.Username;
         document.getElementById('name1').textContent = nameData;
