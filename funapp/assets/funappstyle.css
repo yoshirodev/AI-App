@@ -34,3 +34,30 @@ body{
     left: 3%;
     background-color: transparent;
 }
+
+.SecondDiv{
+    background-color: #2cb6e4;
+    position: relative;
+    background-attachment: fixed;
+    width: 500px;
+    height: 500px;
+    padding: 100px 110px;
+    background-image: linear-gradient(to bottom, #4686ff80, rgba(0, 0, 0, 0));
+    top: 10%;
+    right: 80%;
+    left: 20%;
+}
+
+.buttonList{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    bottom: 10%;
+    left: 30%;
+}
+
+.buttonList button{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
