@@ -28,8 +28,7 @@ async function getChatbotResponse(userMessage) {
                     // Placed
                     switch(intent.tag){
                         case "yandere-request":
-                            // Yandere image 
-                            console.log("Yandere");
+                            ChangeYandereExpression();
                             break;
                         case "tsundere-request":
                             //Proud image
@@ -42,7 +41,7 @@ async function getChatbotResponse(userMessage) {
                             break;
                         default:
                             // Put Changed
-                            ChangeExpression();
+                            ChangeRandomExpression();
                             break;
                     }
                     // Placed
@@ -122,9 +121,17 @@ function NamingEpsilon(){
 
 sendButtonCheck.addEventListener('click', NamingEpsilon);
 
-function ChangeExpression(){
+function ChangeRandomExpression(){
     let mascotElement = document.querySelector(".Mascot");
     let images = ["img/Mascot/e1.png", "img/Mascot/e2.png", "img/Mascot/e3.png", "img/Mascot/e4.png"];
+    let randomIndex = Math.floor(Math.random() * images.length);
+    let randomImage = images[randomIndex];
+    mascotElement.style.backgroundImage = `url(${randomImage})`;
+}
+
+function ChangeYandereExpression(){
+    let mascotElement = document.querySelector(".Mascot");
+    let images = ["img/Mascot/y1.png", "img/Mascot/y2.png", "img/Mascot/y3.png", "img/Mascot/y4.png", "img/Mascot/y5.png"];
     let randomIndex = Math.floor(Math.random() * images.length);
     let randomImage = images[randomIndex];
     mascotElement.style.backgroundImage = `url(${randomImage})`;
