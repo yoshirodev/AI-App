@@ -12,6 +12,7 @@ async function sendUserMessage() {
 
     document.getElementById("messageBot").value = "";
     ChangeExpression();
+    EpsilonStates();
 }
 
 async function getChatbotResponse(userMessage) {
