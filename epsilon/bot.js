@@ -12,7 +12,6 @@ async function sendUserMessage() {
 
     document.getElementById("messageBot").value = "";
     ChangeExpression();
-    EpsilonStates();
 }
 
 async function getChatbotResponse(userMessage) {
@@ -74,29 +73,6 @@ function addBotMessage(message) {
 }
 
 // MAIN SOFTWARE STATE FUNCTION
-
-function EpsilonStates(){
-    const userMessageCheck = document.getElementById("messageBot").value;
-
-    const yandereRequest = ["can you be yandere?", "be yandere", "please be yandere"];
-    const tsundereRequest = ["can you be tsundere?", "be tsundere", "please be tsundere"];
-    const shyRequest = ["can you be shy girl?", "be shy girl", "please be shy girl"];
-
-    // States
-    switch (userMessageCheck){
-        case yandereRequest.includes(userMessageCheck):
-            alert("yandereState");
-            break;
-        case tsundereRequest.includes(userMessageCheck):
-            alert("tsundereState");
-            break;
-        case shyRequest.includes(userMessageCheck):
-            alert("shyState");
-            break;
-        default:
-            break;
-    }
-}
 
 
 // SUB FUNCTIONS
