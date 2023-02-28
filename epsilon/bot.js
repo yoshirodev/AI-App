@@ -136,5 +136,5 @@ function ChangeYandereExpression(){
     let randomIndex = Math.floor(Math.random() * images.length);
     let randomImage = images[randomIndex];
     mascotElement.style.backgroundImage = `url(${randomImage})`;
-    mascotElement.style.backgroundSize = "750px 950px";
+    mascotElement.style.backgroundSize = "720px 950px";
 }
