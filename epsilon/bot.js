@@ -84,15 +84,16 @@ function EpsilonStates(){
 
     // States
     switch (userMessageCheck){
-        default:
-        case yandereRequest.indexOf(userMessageCheck) !== -1:
+        case yandereRequest.includes(userMessageCheck):
             alert("yandereState");
             break;
-        case tsundereRequest.indexOf(userMessageCheck) !== -1:
+        case tsundereRequest.includes(userMessageCheck):
             alert("tsundereState");
             break;
-        case shyRequest.indexOf(userMessageCheck) !== -1:
+        case shyRequest.includes(userMessageCheck):
             alert("shyState");
+            break;
+        default:
             break;
     }
 }
