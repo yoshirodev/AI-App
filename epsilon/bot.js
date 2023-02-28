@@ -26,6 +26,26 @@ async function getChatbotResponse(userMessage) {
                 const similarity = 1 - (distance / Math.max(userMessage.length, pattern.length));
                 const threshold = 0.8;
                 if (similarity >= threshold) {
+                    // Placed
+                    switch(intent.tag){
+                        case "yandere-request":
+                            // Yandere image 
+                            console.log("Yandere");
+                            break;
+                        case "tsundere-request":
+                            //Proud image
+                            break;
+                        case "dandere-request":
+                            // Shy image
+                            break;
+                        case "kuudere-request":
+                            // Angry Image
+                            break;
+                        default:
+                            // default loop images
+                            break;
+                    }
+                    // Placed
                     const response = intent.responses[Math.floor(Math.random() * intent.responses.length)];
                     return response;
                 }

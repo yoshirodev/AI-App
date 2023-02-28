@@ -1,5 +1,23 @@
 {
-    "intents": [    
+    "intents": [   
+        {
+            "tag": "yandere-request",
+            "patterns": [
+                "Can you be yandere?",
+                "Be Yandere",
+                "i want you to become yandere",
+                "i want you to be yandere",
+                "Please be yandere",
+                "Yandere Request",
+                "Requesting Yandere",
+                "Request Yandere"
+            ],
+            "responses": [
+                "Sure, i will :)",
+                ":)",
+                "Yes :)"
+            ]
+        }, 
         {
             "tag": "greeting-questions",
             "patterns": [
