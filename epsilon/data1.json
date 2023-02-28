@@ -342,51 +342,128 @@
             ]
         },
         {
-            "tag": "love-feeling",
+            "tag": "love-questions",
             "patterns": [
-                "What does love feel like?"
+                "What is love?",
+                "How do you define love?",
+                "Can you explain what love means?"
             ],
             "responses": [
-                "Love feels different for everyone, but some common feelings associated with love include warmth, happiness, and a sense of security."
+                "Love can mean different things to different people, but generally it involves deep affection and caring for someone or something.",
+                "Love can be difficult to define, but it often involves a strong emotional connection and a desire to make someone else happy.",
+                "Love can feel different for everyone, but it often involves strong positive emotions like happiness, warmth, and affection.",
+                "Love is a complex and multifaceted emotion, and it can be difficult to fully understand or explain."
+            ]
+        },          
+        {
+            "tag": "love-feeling",
+            "patterns": [
+                "What does love feel like?",
+                "How does it feel to be in love?",
+                "Can you describe the feeling of being in love?",
+                "What are some physical sensations that come with love?",
+                "What emotions are associated with love?"
+            ],
+            "responses": [
+                "Love feels different for everyone, but some common feelings associated with love include warmth, happiness, and a sense of security.",
+                "Love can feel like a warm and fuzzy feeling in your chest.",
+                "Being in love can feel like you're walking on air.",
+                "Love can feel like a sense of peace and contentment.",
+                "When you're in love, your heart may beat faster and your palms may sweat.",
+                "Love can bring a sense of joy and happiness to your life."
             ]
         },
         {
             "tag": "love-multiple-people",
             "patterns": [
-                "Is it possible to love more than one person at once?"
+                "Is it possible to love more than one person at once?",
+                "Can you be in love with two people at the same time?",
+                "What is polyamory?",
+                "How do you balance love for multiple partners?",
+                "What are the challenges of loving more than one person?"
             ],
             "responses": [
+                "Yes, it is possible to love more than one person at once.",
+                "Polyamory is a term used to describe having multiple romantic relationships.",
+                "Balancing love for multiple partners requires open communication and honesty.",
+                "One challenge of loving multiple people is managing time and attention.",
+                "It's important to establish boundaries and expectations in polyamorous relationships.",
                 "Yes, it's possible to love more than one person at the same time. It's called polyamory and it's a valid way of forming relationships."
             ]
         },
         {
             "tag": "love-signs",
             "patterns": [
+                "What are some signs that you're falling in love?",
                 "How can you tell if someone loves you?",
-                "What are some signs that you're falling in love?"
+                "What are some signs that someone is in love with you?",
+                "What behaviors indicate that someone is in love?",
+                "Can you feel when someone loves you?",
+                "What are some nonverbal cues that indicate love?"
             ],
             "responses": [
+                "Someone who loves you may prioritize your needs and happiness.",
+                "If someone is in love with you, they may pay close attention to you and listen intently.",
+                "Love can be expressed through affectionate gestures and words of affirmation.",
+                "You may be able to feel someone's love for you through their actions and words.",
+                "Nonverbal cues that indicate love include eye contact, physical touch, and smiling.",
                 "Some signs that someone loves you include them prioritizing you, showing affection, and making an effort to spend time with you. Signs that you're falling in love with someone include thinking about them often, feeling a strong emotional connection, and being willing to do things for them."
             ]
         },
         {
             "tag": "love-vs-infatuation",
             "patterns": [
-                "What is the difference between love and infatuation?"
+                "What is the difference between love and infatuation?",
+                "How can you tell if you're in love or just infatuated?",
+                "Is infatuation a form of love?",
+                "What are the characteristics of infatuation?",
+                "Can infatuation turn into love?"
             ],
             "responses": [
+                "Infatuation is often characterized by intense feelings of attraction or obsession.",
+                "Love is a deeper emotion that involves a strong emotional connection and commitment.",
+                "Infatuation can be fleeting, while love is more enduring.",
+                "Infatuation can turn into love if it is nurtured and developed over time.",
+                "Love is based on mutual respect and trust, while infatuation is often based on fantasy and idealization.",
                 "Infatuation is often based on physical attraction and an idealized image of a person, while love involves a deeper emotional connection and a willingness to accept a person's flaws."
             ]
         },
         {
             "tag": "love-long-term",
             "patterns": [
-                "How can you keep love alive in a long-term relationship?"
+                "How can you keep love alive in a long-term relationship?",
+                "What are some ways to maintain love in a long-term relationship?",
+                "How can you reignite the spark in a long-term relationship?",
+                "What are some common challenges in long-term relationships?",
+                "How do you navigate conflicts in a long-term relationship?"
             ],
             "responses": [
+                "Maintaining open communication and expressing appreciation for your partner can help keep love alive in a long-term relationship.",
+                "It's important to continue to prioritize quality time together and try new experiences.",
+                "Reigniting the spark may involve trying new things, surprising your partner with thoughtful gestures, and focusing on",
                 "Some ways to keep love alive in a long-term relationship include showing appreciation for your partner, being affectionate, communicating openly and honestly, and making time for each other."
             ]
         },        
+        {
+            "tag": "yandere",
+            "patterns": [
+                "What is a Yandere?",
+                "Can you explain what a Yandere is?",
+                "What are the characteristics of a Yandere?",
+                "What does it mean to be a Yandere?",
+                "What makes a character a Yandere?",
+                "What Yandere?",
+                "Yandere What?",
+                "Yandere?"
+            ],
+            "responses": [
+                "A Yandere is a character, typically in anime or manga, who is initially sweet and loving but can quickly become violent and obsessive towards the person they love. They often resort to extreme measures, such as stalking or even murder, to protect and possess their loved one.",
+                "In anime and manga, a Yandere is a character who displays obsessive and violent behavior towards the person they are in love with. They are often depicted as sweet and loving at first, but their behavior becomes increasingly erratic and dangerous as their obsession grows.",
+                "Yandere is a term used to describe a character in anime or manga who is deeply in love with someone to the point of obsession. They often display violent or erratic behavior towards the person they love, and may resort to extreme measures to keep them close.",
+                "A Yandere is a character archetype often found in anime and manga. They are characterized by their obsessive and violent behavior towards the person they love, often resorting to extreme measures to keep them close or eliminate any perceived threats to their relationship.",
+                "A Yandere is a type of character in anime and manga who is deeply in love with someone to the point of obsession. They will go to great lengths to protect and possess their loved one, including resorting to violence or even murder."
+            ]
+        },           
         {
             "isNamed": false,
             "name": "",
