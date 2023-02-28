@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>GameApp</title>
+        <title>DevApp</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=0">
-        <link rel="stylesheet" href="assets/funappstyle.css">
+        <link rel="stylesheet" href="assets/devstyle.css">
     </head>
-
     <body>
-
-
-
         <div class="MainDiv" ng-app="">
             <p>Name: <input id="nameInput" type="text" ng-model="name"></p>
             <button onclick="SubmitName()" class="sendButton">Send</button>
@@ -29,6 +25,9 @@
                 <button>DisplayAge</button>
                 <button>DisplayAddress</button>
             </div>
+        </div>
+        <div class="ThirdDiv" id="ThirdDivId">
+            <button class="DebugButton" onclick="CheckNums()"></button>
         </div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>

@@ -342,6 +342,52 @@
             ]
         },
         {
+            "tag": "love-feeling",
+            "patterns": [
+                "What does love feel like?"
+            ],
+            "responses": [
+                "Love feels different for everyone, but some common feelings associated with love include warmth, happiness, and a sense of security."
+            ]
+        },
+        {
+            "tag": "love-multiple-people",
+            "patterns": [
+                "Is it possible to love more than one person at once?"
+            ],
+            "responses": [
+                "Yes, it's possible to love more than one person at the same time. It's called polyamory and it's a valid way of forming relationships."
+            ]
+        },
+        {
+            "tag": "love-signs",
+            "patterns": [
+                "How can you tell if someone loves you?",
+                "What are some signs that you're falling in love?"
+            ],
+            "responses": [
+                "Some signs that someone loves you include them prioritizing you, showing affection, and making an effort to spend time with you. Signs that you're falling in love with someone include thinking about them often, feeling a strong emotional connection, and being willing to do things for them."
+            ]
+        },
+        {
+            "tag": "love-vs-infatuation",
+            "patterns": [
+                "What is the difference between love and infatuation?"
+            ],
+            "responses": [
+                "Infatuation is often based on physical attraction and an idealized image of a person, while love involves a deeper emotional connection and a willingness to accept a person's flaws."
+            ]
+        },
+        {
+            "tag": "love-long-term",
+            "patterns": [
+                "How can you keep love alive in a long-term relationship?"
+            ],
+            "responses": [
+                "Some ways to keep love alive in a long-term relationship include showing appreciation for your partner, being affectionate, communicating openly and honestly, and making time for each other."
+            ]
+        },        
+        {
             "isNamed": false,
             "name": "",
             "tag": "naming",
