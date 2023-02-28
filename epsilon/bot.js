@@ -11,7 +11,6 @@ async function sendUserMessage() {
     addBotMessage(chatbotResponse);
 
     document.getElementById("messageBot").value = "";
-    ChangeExpression();
 }
 
 async function getChatbotResponse(userMessage) {
@@ -42,7 +41,8 @@ async function getChatbotResponse(userMessage) {
                             // Angry Image
                             break;
                         default:
-                            // default loop images
+                            // Put Changed
+                            ChangeExpression();
                             break;
                     }
                     // Placed
