@@ -132,7 +132,7 @@ function ChangeRandomExpression(){
 
 function ChangeYandereExpression(){
     let mascotElement = document.querySelector(".Mascot");
-    let images = ["img/Mascot/y1.png", "img/Mascot/y2.png", "img/Mascot/y3.png", "img/Mascot/y4.png", "img/Mascot/y5.png"];
+    let images = ["img/Mascot/y2.png", "img/Mascot/y3.png", "img/Mascot/y4.png", "img/Mascot/y5.png"];
     let randomIndex = Math.floor(Math.random() * images.length);
     let randomImage = images[randomIndex];
     mascotElement.style.backgroundImage = `url(${randomImage})`;
