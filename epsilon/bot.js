@@ -72,6 +72,30 @@ function addBotMessage(message) {
     chatList.appendChild(messageItem);
 }
 
+// MAIN SOFTWARE STATE FUNCTION
+
+function EpsilonStates(){
+    const userMessageCheck = document.getElementById("messageBot").value;
+
+    const yandereRequest = ["can you be yandere?", "be yandere", "please be yandere"];
+    const tsundereRequest = ["can you be tsundere?", "be tsundere", "please be tsundere"];
+    const shyRequest = ["can you be shy girl?", "be shy girl", "please be shy girl"];
+
+    // States
+    switch (userMessageCheck){
+        default:
+        case yandereRequest.indexOf(userMessageCheck) = -1:
+            alert("yandereState");
+            break;
+        case tsundereRequest.indexOf(userMessageCheck) = -1:
+            alert("tsundereState");
+            break;
+        case shyRequest.indexOf(userMessageCheck) = -1:
+            alert("shyState");
+            break;
+    }
+}
+
 
 // SUB FUNCTIONS
 
