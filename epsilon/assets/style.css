@@ -68,3 +68,9 @@ input{
     left: -13%;
     top: -5%;
 }
+
+.changeElem {
+    background-size: 750px 950px;
+    left: -10%;
+    top: -3%;
+}
