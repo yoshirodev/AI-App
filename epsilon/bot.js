@@ -33,8 +33,8 @@ async function getChatbotResponse(userMessage) {
                         case "tsundere-request":
                             //Proud image
                             break;
-                        case "dandere-request":
-                            // Shy image
+                        case "creator-affection1":
+                            LoveExpression();
                             break;
                         case "kuudere-request":
                             // Angry Image
@@ -133,6 +133,15 @@ function ChangeRandomExpression(){
 function ChangeYandereExpression(){
     let mascotElement = document.querySelector(".Mascot");
     let images = ["img/Mascot/y1.png", "img/Mascot/y2.png", "img/Mascot/y3.png", "img/Mascot/y4.png", "img/Mascot/y5.png"];
+    let randomIndex = Math.floor(Math.random() * images.length);
+    let randomImage = images[randomIndex];
+    mascotElement.style.backgroundImage = `url(${randomImage})`;
+    mascotElement.classList.add('changeElem');
+}
+
+function LoveExpression(){
+    let mascotElement = document.querySelector(".Mascot");
+    let images = ["img/Mascot/y2.png", "img/Mascot/y5.png"];
     let randomIndex = Math.floor(Math.random() * images.length);
     let randomImage = images[randomIndex];
     mascotElement.style.backgroundImage = `url(${randomImage})`;

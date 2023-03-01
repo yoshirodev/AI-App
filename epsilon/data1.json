@@ -14,11 +14,34 @@
                 "Request Yandere"
             ],
             "responses": [
-                "Sure, i will :)",
-                ":)",
-                "Yes :)"
+                "Sure",
+                "yes yes yes of course",
+                "Yes of course just for you",
+                "Of course just for you",
+                "sure since you requested it"
             ]
         }, 
+        {
+            "tag": "tsundere-request",
+            "patterns": [
+                "Can you be tsundere?",
+                "Can you become tsundere?",
+                "Be tsundere",
+                "i want you to become tsundere",
+                "i want you to be tsundere",
+                "Please be tsundere",
+                "tsundere Request",
+                "Requesting tsundere",
+                "Request tsundere"
+            ],
+            "responses": [
+                "i dont want to",
+                "no",
+                "not happening",
+                "no no", 
+                "no way, i dont want to"
+            ]
+        },
         {
             "tag": "greeting-questions",
             "patterns": [
