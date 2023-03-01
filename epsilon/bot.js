@@ -128,6 +128,8 @@ function ChangeRandomExpression(){
     let randomImage = images[randomIndex];
     mascotElement.style.backgroundImage = `url(${randomImage})`;
     mascotElement.style.backgroundSize = "650px 950px";
+    mascotElement.style.top = "5%";
+    mascotElement.style.left = "-13%";
 }
 
 function ChangeYandereExpression(){
@@ -137,4 +139,6 @@ function ChangeYandereExpression(){
     let randomImage = images[randomIndex];
     mascotElement.style.backgroundImage = `url(${randomImage})`;
     mascotElement.style.backgroundSize = "750px 950px";
+    mascotElement.style.top = "4%";
+    mascotElement.style.left = "-12%";
 }
