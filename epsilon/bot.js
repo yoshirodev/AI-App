@@ -127,7 +127,7 @@ function ChangeRandomExpression(){
     let randomIndex = Math.floor(Math.random() * images.length);
     let randomImage = images[randomIndex];
     mascotElement.style.backgroundImage = `url(${randomImage})`;
-    //mascotElement.classList.remove('changeElem');
+    mascotElement.classList.remove('changeElem');
 }
 
 function ChangeYandereExpression(){
@@ -136,5 +136,5 @@ function ChangeYandereExpression(){
     let randomIndex = Math.floor(Math.random() * images.length);
     let randomImage = images[randomIndex];
     mascotElement.style.backgroundImage = `url(${randomImage})`;
-    //mascotElement.classList.add('changeElem');
+    mascotElement.classList.add('changeElem');
 }
