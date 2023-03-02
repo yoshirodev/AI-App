@@ -91,9 +91,6 @@ function addBotMessage(message) {
     chatList.appendChild(messageItem);
 }
 
-// MAIN SOFTWARE STATE FUNCTION
-
-
 // SUB FUNCTIONS
 
 let sendButtonCheck = document.getElementById('sendButtonCLC');
