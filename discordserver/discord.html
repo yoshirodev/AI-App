@@ -11,4 +11,17 @@
             <iframe src="https://discord.com/widget?id=716318696137555998&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
     </body>
+
+    <script>
+        window.addEventListener('load', redirect);
+
+        function redirect() {
+            // Check if the aspect ratio is that of a phone
+            const isPhone = window.matchMedia("(max-aspect-ratio: 5/6)").matches;
+
+            if (isPhone) {
+                window.location.href = '../errorDir/errorPage.html';
+            } 
+        }
+    </script>
 </html>

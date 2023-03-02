@@ -144,3 +144,14 @@ function LoveExpression(){
     mascotElement.style.backgroundImage = `url(${randomImage})`;
     mascotElement.classList.add('changeElem');
 }
+
+window.addEventListener('load', redirect);
+
+function redirect() {
+    // Check if the aspect ratio is that of a phone
+    const isPhone = window.matchMedia("(max-aspect-ratio: 5/6)").matches;
+
+    if (isPhone) {
+        window.location.href = '../errorDir/errorPage.html';
+    } 
+}
