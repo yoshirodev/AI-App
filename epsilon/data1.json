@@ -51,6 +51,7 @@
                 "Wazzap",
                 "Wazap",
                 "Ey",
+                "Eyyyyyy",
                 "Hi",
                 "Hello",
                 "Hey there"
@@ -58,7 +59,15 @@
             "responses": [
                 "Hi, how can I help you?",
                 "Hello, what can I do for you?",
-                "Hey there, how can I assist you?"
+                "Hey there, how can I assist you?",
+                "Hi there! It's great to see you today!",
+                "Greetings! How are you doing today?",
+                "Hello! It's lovely to meet you!",
+                "Heya! I hope you're having a good time so far!",
+                "Yo! It's great to see you again!",
+                "Hola! I'm happy to see you today!",
+                "Hiya! I hope you're doing well!",
+                "Salutations! It's a pleasure to make your acquaintance!"
             ]
         },
         {
@@ -69,28 +78,249 @@
                 "Goodbye",
                 "See you later",
                 "Bye Bye",
-                "Ciao"
+                "Ciao",
+                "Have a good one!",
+                "Take it easy!",
+                "Later gator!",
+                "Peace out!",
+                "Catch you on the flip side!",
+                "Bon voyage!",
+                "Until next time!",
+                "Have a nice day!",
+                "Keep in touch!",
+                "Adieu!"
             ],
             "responses": [
                 "Goodbye, have a nice day!",
                 "Bye, take care!",
-                "See you later, have a great day!"
+                "See you later, have a great day!",
+                "Farewell! Stay safe and take care!",
+                "See you later! Have a wonderful day!",
+                "Bye for now! Catch you later!",
+                "Goodbye! Wishing you all the best!",
+                "So long! Take care of yourself!",
+                "Adios! Have a great day ahead!",
+                "Toodles! Until we meet again!",
+                "Take care! See you soon!",
+                "Hasta la vista! Have a fantastic day!",
+                "See ya! Stay safe and stay awesome!"
+            ]
+        },
+        {
+            "tag": "goodmoring-questions",
+            "patterns": [
+                "Mornin!",
+                "Morning!",
+                "Good morning!",
+                "Good morning, sunshine!",
+                "Rise and shine!",
+                "Top of the morning to you!",
+                "Good morning, beautiful/handsome!",
+                "Good morning, world!",
+                "Hello, new day!",
+                "It's a beautiful day to start with a good morning!",
+                "Good morning, lovely people!",
+                "Wishing you a pleasant good morning!"
+            ],
+            "responses": [
+                "Good morning, it's great to see you up and about!",
+                "Good morning! I hope your day is as bright as your smile!",
+                "Good morning, have a cup of coffee and enjoy the day!",
+                "Rise and shine! Good morning to you!",
+                "Good morning! Another day, another opportunity to shine!",
+                "Good morning! I hope your day is filled with joy and laughter!",
+                "Morning! May your coffee be strong and your day be productive!",
+                "Good morning! Let's make today a great one!",
+                "Good morning, sunshine! The world is waiting for you!",
+                "Good morning! I hope today brings you everything you need to succeed!",
+                "Good morning to you too!",
+                "Morning! How are you today?",
+                "Hey, good morning! Did you sleep well?",
+                "Good morning! I hope you have a great day ahead!",
+                "Morning! It's a beautiful day, isn't it?",
+                "Thanks for the good morning wishes! You too have a great morning!",
+                "Good morning, my friend! How's everything going?",
+                "Good morning! I'm looking forward to what this day brings.",
+                "Hello! Have a fantastic day!"
+            ]
+        },
+        {
+            "tag": "goodafternoon-questions",
+            "patterns": [
+                "Afternoon mate",
+                "Afternoon!",
+                "Gud Afternoon!",
+                "Good afternoon!",
+                "Hello! How's your day going so far?",
+                "Greetings! I hope you're having a great day.",
+                "It's nice to see you again. Good afternoon!",
+                "Hey there! Enjoying your afternoon?",
+                "Afternoon greetings! How can I assist you today?",
+                "Hi! Hope you're having a productive afternoon!",
+                "Good afternoon, how can I help you today?",
+                "Hiya! How's your day been so far this afternoon?",
+                "Good afternoon! I hope you're doing well!"
+            ],
+            "responses": [
+                "Good afternoon! How can I assist you today?",
+                "Hello! I hope you're having a good afternoon so far.",
+                "Good afternoon! Is there anything I can help you with?",
+                "Hi there! I'm here to assist you with anything you need this afternoon.",
+                "Good afternoon! Let me know if you have any questions or need any help.",
+                "Good afternoon to you too! I hope your day is going well.",
+                "Hello there! It's a beautiful afternoon, isn't it?",
+                "Hey, good afternoon! Anything interesting happening for you today?",
+                "Hi, good afternoon! What's been keeping you busy today?",
+                "Good afternoon! How has your day been so far?",
+                "Good afternoon! I hope you're enjoying the sunshine.",
+                "Hello! Good afternoon to you as well. How can I assist you today?",
+                "Good afternoon! I'm here and ready to help with whatever you need.",
+                "Hey there! Good afternoon, and thank you for reaching out.",
+                "Good afternoon! I hope you're having a productive day."
+            ]
+        },
+        {
+            "tag": "goodnight-questions",
+            "patterns": [
+                "Gud night!",
+                "Good Nighty!",
+                "Goodnight!",
+                "Goodnight, sweet dreams!",
+                "Goodnight, sleep well!",
+                "Have a restful night!",
+                "Nighty night!",
+                "Sleep tight!",
+                "Sweet dreams!",
+                "May you have peaceful dreams!",
+                "See you in the morning!",
+                "Goodnight, see you tomorrow!",
+                "Sleep well, my friend!"
+            ],
+            "responses": [
+                "Good night! Sleep well and sweet dreams!",
+                "Thanks, you too! Have a great night.",
+                "Good night! Rest up and have a wonderful tomorrow.",
+                "Good night! I hope you wake up feeling refreshed and energized.",
+                "Sweet dreams! Talk to you tomorrow.",
+                "Sleep well and have sweet dreams!",
+                "Good night, and don't let the bed bugs bite!",
+                "Rest easy and recharge for tomorrow!",
+                "Sweet dreams and peaceful sleep to you!",
+                "Nighty night and sleep tight!",
+                "Have a good night's sleep and wake up refreshed!",
+                "May your dreams be filled with happiness and love!",
+                "Sleep soundly and wake up feeling great!",
+                "Wishing you a restful and rejuvenating night's sleep!",
+                "Good night, and may tomorrow be even better than today!"
+            ]
+        },
+        {
+            "tag": "howareyou-questions",
+            "patterns": [
+                "You How?",
+                "How you?",
+                "How are you?",
+                "How are you doing?",
+                "How are things?",
+                "How's it going?",
+                "How have you been?",
+                "How do you feel?",
+                "What's new?",
+                "What's up?",
+                "How's life treating you?",
+                "How's your day going?",
+                "How's everything going?"
+            ],
+            "responses": [
+                "I'm doing well, thank you for asking.",
+                "I'm feeling pretty good today, thanks for asking.",
+                "I'm doing alright, how about you?",
+                "I'm doing fine, thanks for checking in.",
+                "I'm feeling great, thanks for asking.",
+                "I'm doing okay, how about yourself?",
+                "I'm doing well, and you?",
+                "I'm feeling good, thanks for asking.",
+                "I'm doing just fine, thanks for asking.",
+                "I'm doing pretty well, how about you?",
+                "I'm doing well, thank you for asking. How about you?",
+                "I'm feeling pretty good today. How about you?",
+                "I'm doing alright. Thanks for asking.",
+                "I'm feeling great! How are you?",
+                "I'm good, thanks. How are you doing?",
+                "I'm doing fine, thanks. How about yourself?",
+                "I'm doing pretty well today. How are you doing?",
+                "I'm doing okay. How about you?",
+                "I'm feeling wonderful. How are you feeling today?",
+                "I'm doing pretty good. How about you?"                
+            ]
+        },
+        {
+            "tag": "imdoingprettywell-userres",
+            "patterns": [
+                "Not too bad",
+                "I'm doing well",
+                "I'm doing pretty good, thanks for asking",
+                "I'm doing alright",
+                "I'm doing great",
+                "I'm doing just fine",
+                "I'm doing okay",
+                "I'm doing fine",
+                "I'm doing pretty well",
+                "I'm doing well, thank you for asking.",
+                "I'm doing pretty good, thanks for asking. How about you?",
+                "I'm doing alright. How about you?",
+                "Not too bad. How about yourself?",
+                "I'm doing great. How about you?",
+                "I'm doing just fine. How about you?",
+                "Can't complain. How about you?",
+                "I'm doing okay. How about you?",
+                "I'm doing fine, thanks for asking. How about yourself?",
+                "I'm doing pretty well. How about you?"
+            ],
+            "responses": [
+                "I'm glad to hear that.",
+                "That's great to hear!",
+                "Awesome, glad you're doing well!",
+                "Fantastic!",
+                "Good to know!",
+                "Excellent!",
+                "I'm happy to hear that."
             ]
         },
         {
             "tag": "creator-questions",
             "patterns": [
-                "Who is you creator?",
-                "Who created you?",
                 "Who is your creator?",
-                "Who made you?",
-                "What group made you?"
+                "Who created you?",
+                "Who is responsible for your existence?",
+                "What's the history behind your creation?",
+                "Who brought you into existence?",
+                "What's the story behind your development?",
+                "Who is behind your programming?",
+                "What team is responsible for your creation?",
+                "Who designed and built you?",
+                "What company or organization is behind your creation?",
+                "Who can I thank for your creation?",
+                "What group made you?",
+                "what created you?",
+                "What developer created you?",
+                "Who developer created you?",
+                "who dev you?",
+                "who creted you?"
             ],
             "responses": [
-                "The Group Called The Secret Dev Group",
+                "The Group Called The Eclipse Dev Group",
                 "Yoshiro created me",
                 "Yoshiro is my creator",
-                "Yoshiro created me because he got nothin to do"
+                "Yoshiro created me because he got nothin to do",
+                "I was designed by a team of developers from The Eclipse Dev Group.",
+                "My programming and design were overseen by Yoshiro and his cousins.",
+                "I was created through a combination of artificial intelligence and machine learning algorithms.",
+                "My development was spearheaded by a talented group of engineers.",
+                "My existence is the result of years of research and experimentation.",
+                "My programming and design were a joint effort between humans and advanced algorithms.",
+                "My creation was made possible by Yoshiro",
+                "My origins are shrouded in mystery, even to me."
             ]
         },
         {
@@ -100,13 +330,27 @@
                 "Are you a bot?",
                 "Are you an AI?",
                 "Are you a chatbot?",
-                "Tell me about yourself"
+                "Tell me about yourself",
+                "you AI?",
+                "What kind of entity are you?",
+                "Can you describe your function?",
+                "Are you a machine intelligence?",
+                "How were you programmed?",
+                "What is your purpose?",
+                "Do you have a name?",
+                "How do you work?",
+                "Are you a language model?",
+                "Are you a computer program?"
             ],
             "responses": [
                 "I am an AI created by the group called The Secret Dev Group. I am currently being trained, so I might not be able to answer some of your questions.",
                 "I am an artificial intelligence trained by the group called The Secret Dev Team. I am currently being trained, so I might not be able to answer some of your questions.",
                 "I am an AI under development.",
-                "I am an AI that is still under development, so I apologize if I can't answer some of your questions."
+                "I am an AI that is still under development, so I apologize if I can't answer some of your questions.",
+                "I am an AI personal assistant designed to help with tasks and answer questions.",
+                "I am an AI designed to provide assistance and support to The Eclipse Dev Team.",
+                "I am a machine learning model designed to read and respond to user input.",
+                "I am an intelligent chatbot trained to understand and respond to user input."
             ]
         },
         {
@@ -114,11 +358,21 @@
             "patterns": [
                 "What is your favorite color?",
                 "What color do you like the most?",
-                "What color do you prefer?"
+                "What color do you prefer?",
+                "Your favorite color?",
+                "What your favorite color?",
+                "Favorite Color?",
+                "Color you like?",
+                "Color you're interested in?"
             ],
             "responses": [
                 "As an AI, I don't have a favorite color.",
-                "I don't have the ability to have preferences, including colors."
+                "I don't have the ability to have preferences, including colors.",
+                "I'm sorry, but as an AI, I don't have personal preferences.",
+                "I don't have the capability to have favorite things, including colors.",
+                "I don't have a favorite color since I'm an AI and don't have personal preferences.",
+                "Being an AI, I don't have the capacity to have favorite colors.",
+                "I'm not capable of having preferences as an AI, including having a favorite color."
             ]
         },
         {
@@ -130,7 +384,7 @@
             ],
             "responses": [
                 "As an AI, I don't have the ability to travel, but I can provide you with information about travel.",
-                "Cmon, im an AI i cant travel. i wish i could but nah"
+                "Cmon, im an AI i cant travel. i wish i could but no"
             ]
         },
         {
