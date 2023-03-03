@@ -1,5 +1,7 @@
 // MAIN ARTIFICIAL INTELIGENCE SOFTWARE
 
+let isCountryNamed = false;
+
 async function sendUserMessage() {
     const userMessage = document.getElementById("messageBot").value;
     if (userMessage.trim() === "") {
@@ -39,14 +41,34 @@ async function getChatbotResponse(userMessage) {
                         case "kuudere-request":
                             // Angry Image
                             break;
+                        case "weather-request":
+                            WeatherCondition();
+                            break;
                         default:
                             // Put Changed
                             ChangeRandomExpression();
                             break;
                     }
+                    // NAMING
+                    let inputMBot = document.getElementById('messageBot').value;
+                    const namingIntent = data.intents.find(intent => intent.tag === 'naming');
+                    const objectName = namingIntent.patterns;
+        
+                    if(objectName.includes(inputMBot)){    
+                        if (namingIntent.name === "") {
+                            // MAKE A NAMING FEATURE HERE
+
+                            const responseName = namingIntent.then.responses[Math.floor(Math.random() * namingIntent.then.responses.length)];
+                            return responseName;
+                        } else {
+                            const nameText = namingIntent.name;
+                            const responseNamed = namingIntent.else.responses[0].replace('{{name}}', nameText);
+                            return responseNamed;
+                        }
+                    }
                     // Placed
-                    const response = intent.responses[Math.floor(Math.random() * intent.responses.length)];
-                    return response;
+                    const responseRan = intent.responses[Math.floor(Math.random() * intent.responses.length)];
+                    return responseRan;
                 }
             }
         }
@@ -95,28 +117,86 @@ function addBotMessage(message) {
 
 let sendButtonCheck = document.getElementById('sendButtonCLC');
 
-function NamingEpsilon(){
-    console.log("is Clicked");
-    let inputMBot = document.getElementById('messageBot').value;
+function NamingEpsilon(botText){
+    try {
+        console.log("is Clicked");
+        let inputMBot = document.getElementById('messageBot').value;
+        fetch('data1.json')
+        .then(response => response.json())
+        .then(data => {
+            const namingIntent = data.intents.find(intent => intent.tag === 'naming');
+            const objectName = namingIntent.patterns;
 
-    fetch('data1.json')
-    .then(response => response.json())
-    .then(data => {
-        const isNamed = data.intents[22].isNamed;
-        let objectName = data.intents[22].patterns;
-
-        if(objectName.includes(inputMBot)){    
-            if (isNamed) {
-                console.log("The chat bot has a name.");
-            } else {
-                console.log("The chat bot does not have a name.");
+            if(objectName.includes(inputMBot)){    
+                if (namingIntent.isNamed) {
+                    console.log("The chat bot has a name.");
+                } else {
+                    console.log("The chat bot does not have a name.");
+                }
             }
-        }
-    })
-    .catch(error => console.error(error));
+        })
+    } catch (error) {
+        console.error(error)
+    }
+    addBotMessage(botText);
 }
 
-sendButtonCheck.addEventListener('click', NamingEpsilon);
+
+//sendButtonCheck.addEventListener('click', NamingEpsilon);
+
+// Weather Funcs 
+
+function WeatherCondition(){
+    //let userInput = document.getElementById('messageBot').value;
+    isCountryNamed = true;
+
+    //location = userInput;
+
+    let location = "New York City";
+    const dateTime = "2023-03-03T12:00:00";
+
+    const apiUrl = "https://api.stormglass.io/v2/weather/point";
+    const queryParams = new URLSearchParams({
+        lat: YOUR_LATITUDE,
+        lng: YOUR_LONGITUDE,
+        params: "temperature,windSpeed,precipitation",
+        start: dateTime,
+        end: dateTime
+    });
+    const headers = {
+        "Authorization": "ebcc8ee2-b9aa-11ed-b59d-0242ac130002-ebcc9040-b9aa-11ed-b59d-0242ac130002"
+    };
+    const requestUrl = `${apiUrl}?${queryParams}`;
+
+    fetch(requestUrl, { headers })
+    .then(response => {
+        if (response.ok) {
+        return response.json();
+        }
+        throw new Error("Network response was not ok.");
+    })
+    .then(data => {
+        const temperature = data.hours[0].temperature.sg;
+        const windSpeed = data.hours[0].windSpeed.sg;
+        const precipitation = data.hours[0].precipitation.sg;
+        
+        const responseText = `The weather in ${location} on ${dateTime} is ${temperature}°C with wind speed of ${windSpeed} m/s and precipitation of ${precipitation} mm.`;
+        if(isCountryNamed){
+            const chatList = document.getElementById("chatList");
+            const messageItem = document.createElement("li");
+            messageItem.classList.add("bot-message");
+            messageItem.textContent = responseText;
+            chatList.appendChild(messageItem);
+            isCountryNamed = false;
+        }
+    })
+    .catch(error => {
+        console.error("Error:", error);
+    });
+}
+
+
+// IMAGE CHANGE EXPRESSIONS
 
 function ChangeRandomExpression(){
     let mascotElement = document.querySelector(".Mascot");
@@ -145,6 +225,8 @@ function LoveExpression(){
     mascotElement.classList.add('changeElem');
 }
 
+
+// ERROR DEF
 window.addEventListener('load', redirect);
 
 function redirect() {

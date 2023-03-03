@@ -43,6 +43,34 @@
             ]
         },
         {
+            "tag": "naming",
+            "name": "",
+            "patterns": [
+                "What is your name?",
+                "Do you have a name?",
+                "Tell me your name",
+                "I want to know your name",
+                "Your name?",
+                "Name?"
+            ],
+            "if": {
+                "name": ""
+            },
+            "then": {
+                "responses": [
+                    "My Model name is Epsilon-V0.1, I dont have an assigned name yet, make one for me :)",
+                    "I dont have a name yet, Epsilon is my model name. please create one for me",
+                    "create one for me since i don't have a name yet"
+                ],
+                "action": "set_bot_name"
+            },
+            "else": {
+                "responses": [
+                    "My name is {{name}}"
+                ]
+            }
+        },  
+        {
             "tag": "greeting-questions",
             "patterns": [
                 "Hey",
@@ -258,6 +286,7 @@
             "tag": "imdoingprettywell-userres",
             "patterns": [
                 "I'm doing good",
+                "im also good",
                 "Not too bad",
                 "I'm doing well",
                 "I'm doing pretty good, thanks for asking",
@@ -276,7 +305,18 @@
                 "Can't complain. How about you?",
                 "I'm doing okay. How about you?",
                 "I'm doing fine, thanks for asking. How about yourself?",
-                "I'm doing pretty well. How about you?"
+                "I'm doing pretty well. How about you?",
+                "I'm also doing well",
+                "I'm also doing pretty good, thanks for asking",
+                "I'm also doing alright",
+                "I'm also doing great",
+                "I'm also doing just fine",
+                "I'm also doing okay",
+                "I'm also doing fine",
+                "I'm also doing pretty well",
+                "I'm also doing well, thank you for asking.",
+                "I'm also doing pretty good, thanks for asking. How about you?",
+                "I'm also doing alright. How about you?"
             ],
             "responses": [
                 "I'm glad to hear that.",
@@ -286,6 +326,28 @@
                 "Good to know!",
                 "Excellent!",
                 "I'm happy to hear that."
+            ]
+        },
+        {
+            "tag": "weather-request",
+            "patterns": [
+                "I want to know the weather",
+                "I want to know the weather in my country",
+                "I wanna know the weather in my country",
+                "Weather here?",
+                "Weather today?",
+                "Weather in my country?",
+                "Whats the weather in my country",
+                "Whats the weather here?",
+                "Whats the weather today?",
+                "Whats the status of the weather in my country",
+                "Weather in here?"
+
+            ],
+            "responses": [
+                "Please input your country so i can determine the weather",
+                "May i know the name of the country?",
+                "Name of the country?"
             ]
         },
         {
@@ -763,35 +825,151 @@
                 "A Yandere is a character archetype often found in anime and manga. They are characterized by their obsessive and violent behavior towards the person they love, often resorting to extreme measures to keep them close or eliminate any perceived threats to their relationship.",
                 "A Yandere is a type of character in anime and manga who is deeply in love with someone to the point of obsession. They will go to great lengths to protect and possess their loved one, including resorting to violence or even murder."
             ]
-        },           
+        },      
         {
-            "isNamed": false,
-            "name": "",
-            "tag": "naming",
+            "tag": "country list",
             "patterns": [
-                "What is your name?",
-                "Do you have a name?",
-                "Tell me your name",
-                "I want to know your name",
-                "Your name?",
-                "Name?"
+                "Afghanistan",
+                "Albania",
+                "Algeria",
+                "Andorra",
+                "Angola",
+                "Antigua and Barbuda",
+                "Argentina",
+                "Armenia",
+                "Australia",
+                "Austria",
+                "Azerbaijan",
+                "The Bahamas",
+                "Bahrain",
+                "Bangladesh",
+                "Barbados",
+                "Belarus",
+                "Belgium",
+                "Belize",
+                "Benin",
+                "Bhutan",
+                "Bolivia",
+                "Bosnia and Herzegovina",
+                "Botswana",
+                "Brazil",
+                "Brunei",
+                "Bulgaria",
+                "Burkina Faso",
+                "Burundi",
+                "Cabo Verde",
+                "Cambodia",
+                "Cameroon",
+                "Canada",
+                "Central African Republic",
+                "Chad",
+                "Chile",
+                "China",
+                "Colombia",
+                "Comoros",
+                "Congo",
+                "Costa Rica",
+                "Côte d'Ivoire",
+                "Croatia",
+                "Cuba",
+                "Cyprus",
+                "Czech Republic",
+                "North Korea",
+                "Democratic Republic of the Congo",
+                "Denmark",
+                "Djibouti",
+                "Dominica",
+                "Dominican Republic",
+                "Ecuador",
+                "Egypt",
+                "El Salvador",
+                "Equatorial Guinea",
+                "Eritrea",
+                "Estonia",
+                "Eswatini",
+                "Ethiopia",
+                "Fiji",
+                "Finland",
+                "France",
+                "Gabon",
+                "Gambia",
+                "Georgia",
+                "Germany",
+                "Ghana",
+                "Greece",
+                "Grenada",
+                "Guatemala",
+                "Guinea",
+                "Guinea-Bissau",
+                "Guyana",
+                "Haiti",
+                "Honduras",
+                "Hungary",
+                "Iceland",
+                "India",
+                "Indonesia",
+                "Iran",
+                "Iraq",
+                "Ireland",
+                "Israel",
+                "Italy",
+                "Jamaica",
+                "Japan",
+                "Jordan",
+                "Kazakhstan",
+                "Kenya",
+                "Kiribati",
+                "Kuwait",
+                "Kyrgyzstan",
+                "Laos",
+                "Latvia",
+                "Lebanon",
+                "Lesotho",
+                "Liberia",
+                "Libya",
+                "Liechtenstein",
+                "Lithuania",
+                "Luxembourg",
+                "Madagascar",
+                "Malawi",
+                "Malaysia",
+                "Maldives",
+                "Mali",
+                "Malta",
+                "Marshall Islands",
+                "Mauritania",
+                "Mauritius",
+                "Mexico",
+                "Federated States of Micronesia",
+                "Moldova",
+                "Monaco",
+                "Mongolia",
+                "Montenegro",
+                "Morocco",
+                "Mozambique",
+                "Myanmar",
+                "Namibia",
+                "Nauru",
+                "Nepal",
+                "Netherlands",
+                "New Zealand",
+                "Nicaragua",
+                "Niger",
+                "Nigeria",
+                "North Macedonia",
+                "Norway",
+                "Oman",
+                "Pakistan",
+                "Palau",
+                "Panama",
+                "Papua New Guinea",
+                "Paraguay",
+                "Peru",
+                "Philippines"
             ],
-            "if": {
-                "isNamed": false,
-                "name": ""
-            },
-            "then": {
-                "responses": [
-                    "My Model name is Epsilon-V0.1, I dont have an assigned name yet, make one for me :)",
-                    "I dont have a name yet, Epsilon is my model name. please create one for me",
-                    "create one for me since i don't have a name yet"
-                ]
-            },
-            "else": {
-                "responses": [
-                    "My name is {{name}}"
-                ]
-            }
-        }        
+            "responses": [
+                "..."
+            ]
+        }      
     ]
 }
