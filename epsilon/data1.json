@@ -44,7 +44,6 @@
         },
         {
             "tag": "naming",
-            "name": "",
             "patterns": [
                 "What is your name?",
                 "Do you have a name?",
@@ -53,20 +52,19 @@
                 "Your name?",
                 "Name?"
             ],
-            "if": {
-                "name": ""
-            },
-            "then": {
+            "responses": [
+                "Sure "
+            ],
+            "notNamed": {
                 "responses": [
                     "My Model name is Epsilon-V0.1, I dont have an assigned name yet, make one for me :)",
-                    "I dont have a name yet, Epsilon is my model name. please create one for me",
+                    "But i dont have a name yet, Epsilon is my model name. please create one for me",
                     "create one for me since i don't have a name yet"
-                ],
-                "action": "set_bot_name"
+                ]
             },
-            "else": {
+            "isNamed": {
                 "responses": [
-                    "My name is {{name}}"
+                    " My name "
                 ]
             }
         },  
@@ -326,6 +324,55 @@
                 "Good to know!",
                 "Excellent!",
                 "I'm happy to hear that."
+            ]
+        },
+        {
+            "tag": "notdoingwell-userres",
+            "patterns": [
+                "I'm not doing good",
+                "im not good",
+                "Not good",
+                "Not That good",
+                "I'm not doing well",
+                "I'm not doing pretty good, but thanks for asking",
+                "I'm not alright",
+                "I'm not doing great",
+                "I'm not okay",
+                "I'm not fine",
+                "I'm not pretty well",
+                "I'm not doing well, but thank you for asking.",
+                "I'm not doing pretty good, but thanks for asking. How about you?",
+                "I'm not alright. How about you?",
+                "Not that bad. How about yourself?",
+                "I'm not doing great. How about you?",
+                "I'm not doing just fine. How about you?",
+                "I'm not doing okay. How about you?",
+                "I'm not doing fine, thanks for asking. How about yourself?",
+                "I'm not doing pretty well. How about you?",
+                "I'm not doing well",
+                "I'm not doing pretty good, thanks for asking",
+                "I'm not doing alright",
+                "I'm not doing great",
+                "I'm not doing just fine",
+                "I'm not doing okay",
+                "I'm not doing fine",
+                "I'm not doing pretty well",
+                "I'm not doing well, thank you for asking.",
+                "I'm not doing pretty good, thanks for asking. How about you?",
+                "I'm not doing alright. How about you?"
+            ],
+            "responses": [
+                "I'm sorry to hear that. Would you like to talk about it?",
+                "I'm here for you. Is there anything I can do to help?",
+                "That's tough. Do you want to tell me more about what's going on?",
+                "I'm sorry to hear that. Is there anything I can do to support you?",
+                "That sounds difficult. I'm here to listen if you need to talk.",
+                "I'm sorry to hear that. Would you like some advice or just someone to listen?",
+                "I'm here for you. How can I help you feel better?",
+                "That's not good to hear. Can you tell me what's been going on?",
+                "I'm sorry to hear that. Is there anything specific that's been bothering you?",
+                "I'm here to support you. Let me know if there's anything I can do to help."
+
             ]
         },
         {

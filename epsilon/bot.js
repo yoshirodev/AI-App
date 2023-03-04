@@ -38,8 +38,8 @@ async function getChatbotResponse(userMessage) {
                         case "creator-affection1":
                             LoveExpression();
                             break;
-                        case "kuudere-request":
-                            // Angry Image
+                        case "notdoingwell-userres":
+                            DeterminedExpression();
                             break;
                         case "weather-request":
                             WeatherCondition();
@@ -53,16 +53,24 @@ async function getChatbotResponse(userMessage) {
                     let inputMBot = document.getElementById('messageBot').value;
                     const namingIntent = data.intents.find(intent => intent.tag === 'naming');
                     const objectName = namingIntent.patterns;
+
+                    let GonnaName = false;
+                    let botNamed = true;
+                    let EpsiName = " ";
+
+                    if(EpsiName == " "){
+                        botNamed = false;
+                    } else{
+                        botNamed = true;
+                    }
         
                     if(objectName.includes(inputMBot)){    
-                        if (namingIntent.name === "") {
-                            // MAKE A NAMING FEATURE HERE
-
-                            const responseName = namingIntent.then.responses[Math.floor(Math.random() * namingIntent.then.responses.length)];
+                        if (!botNamed) {
+                            const responseName = namingIntent.notNamed.responses[Math.floor(Math.random() * namingIntent.then.responses.length)];
                             return responseName;
+                            GonnaName = true
                         } else {
-                            const nameText = namingIntent.name;
-                            const responseNamed = namingIntent.else.responses[0].replace('{{name}}', nameText);
+                            const responseNamed = namingIntent.isNamed.responses[0].replace('{{name}}' + EpsiName);
                             return responseNamed;
                         }
                     }
@@ -219,6 +227,24 @@ function ChangeYandereExpression(){
 function LoveExpression(){
     let mascotElement = document.querySelector(".Mascot");
     let images = ["img/Mascot/y2.png", "img/Mascot/y5.png"];
+    let randomIndex = Math.floor(Math.random() * images.length);
+    let randomImage = images[randomIndex];
+    mascotElement.style.backgroundImage = `url(${randomImage})`;
+    mascotElement.classList.add('changeElem');
+}
+
+function DeterminedExpression(){
+    let mascotElement = document.querySelector(".Mascot");
+    let images = ["img/Mascot/d1.png", "img/Mascot/d2.png", "img/Mascot/d3.png"];
+    let randomIndex = Math.floor(Math.random() * images.length);
+    let randomImage = images[randomIndex];
+    mascotElement.style.backgroundImage = `url(${randomImage})`;
+    mascotElement.classList.add('changeElem');
+}
+
+function ComfortedExpression(){
+    let mascotElement = document.querySelector(".Mascot");
+    let images = ["img/Mascot/hd1.png", "img/Mascot/hd2.png"];
     let randomIndex = Math.floor(Math.random() * images.length);
     let randomImage = images[randomIndex];
     mascotElement.style.backgroundImage = `url(${randomImage})`;
