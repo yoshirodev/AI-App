@@ -255,7 +255,8 @@
                 "What's up?",
                 "How's life treating you?",
                 "How's your day going?",
-                "How's everything going?"
+                "How's everything going?",
+                "What you doing?"
             ],
             "responses": [
                 "I'm doing well, thank you for asking.",
