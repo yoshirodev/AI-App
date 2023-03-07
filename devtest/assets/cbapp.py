@@ -28,3 +28,4 @@ print(generate_response("Hi there!"))
 
 print(generate_response("What's the weather like today?"))
 # Output: "I'm sorry, I didn't understand your question."
+# Added  random
