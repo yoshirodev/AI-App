@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hello Zier</title>
+        <title class="title">Input UserName</title>
     </head>
     <body>
-        <h1 style="text-align: center;">Video of your house :)</h1>
-        <Video style="position: absolute; top:20%; left:24%" controls autoplay>
-            <source src="secret/assets/videoplayback.mp4" type="video/mp4">
-        </Video>
+        <div class="first" id="namediv">
+            <h1 id="warning">hello</h1>
+            <input placeholder="Input your name Mr.User :)" id="nameInput" type="text">
+            <button onclick="Main()">Send</button>
+        </div>
+        <div class="second" id="secretdiv">
+            <h1 id="nameCall"></h2>
+            <Video controls autoplay>
+                <source src="secret/assets/fafafaiaiwaaw.mp4" type="video/mp4">
+            </Video>
+        </div>
     </body>
+    <style>
+        body{
+            overflow: hidden;
+            overflow-x: hidden;
+        }
+
+        .first{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            padding: 100px 110px;
+            background-color: transparent;
+            background-size: 1720px 1080px;
+        }
+
+        .second{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            padding: 100px 110px;
+            background-color: transparent;
+            background-size: 1720px 1080px;
+        }
+    </style>
+    <script src="secret/index.js"></script>
 </html>
